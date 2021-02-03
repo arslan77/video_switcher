@@ -15,7 +15,9 @@ Communication = {
     'https://www.robotwala.app',
     'http://robotwala.app',
     'https://robotwala.app',
-    'https://storage.robotwala.app/'
+    'https://storage.robotwala.app/',
+    'https://school.robotwala.app/',
+    'https://school.robotwala.app'
   ],
 
   init: () => {
