@@ -1,6 +1,7 @@
 import videojs from 'video.js'
 import videojscss from "video.js/dist/video-js.min.css";
 import bootstrapcss from "bootstrap/dist/css/bootstrap.min.css"
+import Activity from "../../js/lib-activity";
 
 import main from "../styles/main.css"
 
@@ -29,6 +30,7 @@ let lectures = [
         "title": "Connect to Bluetooth devices"
     }
 ]
+Activity.init(lectures);
 
 let video = videojs('myvideo')
 let loadVideo = (index) =>{
