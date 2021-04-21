@@ -6,21 +6,41 @@ import main from "../styles/main.css"
 import $ from "jquery/src/jquery"
 let iframeLinks = [
     {
-        "url": "https://school.robotwala.app/testwp2/login-test.php?username=arslan&rand=06a77a9605548fa36fd6803ba3402c9a&redirect=https%3A%2F%2Fschool.robotwala.app%2Ftestwp2%2Fwp-admin%2Fpost.php%3Fpost%3D147%26action%3Delementor",
-        "title": "Introduction to Elementor"
+        "url": "https://scratch.robotwala.app/?id=28",
+        "title": "Scratch"
     },
     {
-        "url": "https://school.robotwala.app/testwp2/login-test.php?username=arslan&rand=06a77a9605548fa36fd6803ba3402c9a&redirect=https%3A%2F%2Fschool.robotwala.app%2Ftestwp2%2Fwp-admin%2Fpost.php%3Fpost%3D320%26action%3Delementor",
-        "title": "Edit the About Us page."
+        "url": "https://scratch.robotwala.app/?id=29",
+        "title": "Scratch"
     },
     {
-        "url": "https://school.robotwala.app/testwp2/login-test.php?username=arslan&rand=06a77a9605548fa36fd6803ba3402c9a&redirect=https%3A%2F%2Fschool.robotwala.app%2Ftestwp2%2Fwp-admin%2Fpost.php%3Fpost%3D320%26action%3Delementor",
-        "title": "Text Editor widget"
+        "url": "https://scratch.robotwala.app/?id=30",
+        "title": "Scratch"
     },
     {
-        "url": "https://school.robotwala.app/testwp2/login-test.php?username=arslan&rand=06a77a9605548fa36fd6803ba3402c9a&redirect=https%3A%2F%2Fschool.robotwala.app%2Ftestwp2%2Fwp-admin%2Fpost.php%3Fpost%3D320%26action%3Delementor",
-        "title": "Forms Layout"
-    }
+        "url": "https://scratch.robotwala.app/?id=31",
+        "title": "Scratch"
+    },
+    {
+        "url": "https://scratch.robotwala.app/?id=32",
+        "title": "Scratch"
+    },
+    {
+        "url": "https://scratch.robotwala.app/?id=33",
+        "title": "Scratch"
+    },
+    {
+        "url": "https://scratch.robotwala.app/?id=34",
+        "title": "Scratch"
+    },
+    {
+        "url": "https://scratch.robotwala.app/?id=35",
+        "title": "Scratch"
+    },
+    {
+        "url": "https://scratch.robotwala.app/?id=36",
+        "title": "Scratch"
+    },
 ]
 Activity.init(iframeLinks);
 
