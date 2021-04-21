@@ -5,27 +5,23 @@ import videojs from "video.js";
 let Activity = {}
 
 Activity.init = (lectures)=>{
-  Activity.lectures = lectures;
-  Activity.video = videojs('myvideo')
+  Activity.iframeLinks = lectures;
+  Activity.iframe = $("#iframe");
   Activity.LEVEL = 1
-  Activity.setWorkspace(Activity.LEVEL, 5, false)
-
-
+  Activity.setWorkspace(Activity.LEVEL, Activity.iframeLinks.length, false)
 }
 
-Activity.loadVideo = (index)=>{
-  Activity.video.src({"type": "video/mp4", "src": Activity.lectures[index].url});
-  Activity.video.play();
-  $("#title").text((index + 1) + " - " + Activity.lectures[index].title);
-  Activity.setWorkspace(Activity.LEVEL, 5, false)
-
+Activity.loadIframe = (index)=>{
+  Activity.iframe.attr("src", Activity.iframeLinks[index].url);
+  $("#title").text((index + 1) + " - " + Activity.iframeLinks[index].title);
+  Activity.setWorkspace(Activity.LEVEL, Activity.iframeLinks.length, false)
 }
 
 
 Activity.changeLevel = function(value = 1) {
   if (value >= 1 && value <= Activity.MAX_LEVEL) {
     Activity.LEVEL  = value;
-    Activity.loadVideo(value - 1);
+    Activity.loadIframe(value - 1);
   }
 }
 
@@ -33,7 +29,7 @@ Activity.nextLevel = function() {
   if (Activity.LEVEL < Activity.MAX_LEVEL) {
     Activity.levelFinished()
     Activity.LEVEL++;
-    Activity.loadVideo(Activity.LEVEL - 1);
+    Activity.loadIframe(Activity.LEVEL - 1);
 
   } else if (Activity.LEVEL === Activity.MAX_LEVEL) {
     Activity.activityFinished()
