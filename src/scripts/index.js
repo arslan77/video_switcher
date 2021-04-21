@@ -12,6 +12,14 @@ let iframeLinks = [
     {
         "url": "https://school.robotwala.app/testwp2/login-test.php?username=arslan&rand=06a77a9605548fa36fd6803ba3402c9a&redirect=https%3A%2F%2Fschool.robotwala.app%2Ftestwp2%2Fwp-admin%2Fpost.php%3Fpost%3D320%26action%3Delementor",
         "title": "Edit the About Us page."
+    },
+    {
+        "url": "https://school.robotwala.app/testwp2/login-test.php?username=arslan&rand=06a77a9605548fa36fd6803ba3402c9a&redirect=https%3A%2F%2Fschool.robotwala.app%2Ftestwp2%2Fwp-admin%2Fpost.php%3Fpost%3D320%26action%3Delementor",
+        "title": "Text Editor widget"
+    },
+    {
+        "url": "https://school.robotwala.app/testwp2/login-test.php?username=arslan&rand=06a77a9605548fa36fd6803ba3402c9a&redirect=https%3A%2F%2Fschool.robotwala.app%2Ftestwp2%2Fwp-admin%2Fpost.php%3Fpost%3D320%26action%3Delementor",
+        "title": "Forms Layout"
     }
 ]
 Activity.init(iframeLinks);
