@@ -4,50 +4,30 @@ import Activity from "../../js/lib-activity";
 import main from "../styles/main.css"
 
 import $ from "jquery/src/jquery"
+
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+var lang = urlParams.get('lang');
+var url;
+
+ if(lang === 'nl'){
+    url = "https://school.robotwala.app/static/apps/robotics-simulator/nl/index.html";
+}else{
+    url = "https://school.robotwala.app/static/apps/robotics-simulator/index.html";
+}
+
 let iframeLinks = [
     {
-        "url": "https://scratch.robotwala.app/?id=28",
-        "title": "Scratch"
-    },
-    {
-        "url": "https://scratch.robotwala.app/?id=29",
-        "title": "Scratch"
-    },
-    {
-        "url": "https://scratch.robotwala.app/?id=30",
-        "title": "Scratch"
-    },
-    {
-        "url": "https://scratch.robotwala.app/?id=31",
-        "title": "Scratch"
-    },
-    {
-        "url": "https://scratch.robotwala.app/?id=32",
-        "title": "Scratch"
-    },
-    {
-        "url": "https://scratch.robotwala.app/?id=33",
-        "title": "Scratch"
-    },
-    {
-        "url": "https://scratch.robotwala.app/?id=34",
-        "title": "Scratch"
-    },
-    {
-        "url": "https://scratch.robotwala.app/?id=35",
-        "title": "Scratch"
-    },
-    {
-        "url": "https://scratch.robotwala.app/?id=36",
-        "title": "Scratch"
-    },
+        "url": url,
+        "title": "RSimulator"
+    }
 ]
 Activity.init(iframeLinks);
 
 let iframe = $('#iframe')
-let loadIframe = (index) =>{
+let loadIframe = (index) => {
     iframe.attr('src', iframeLinks[index].url);
-    $("#title").text((index+1)+" - "+iframeLinks[index].title);
+    $("#title").text((index + 1) + " - " + iframeLinks[index].title);
 }
 
 let index = 0;
