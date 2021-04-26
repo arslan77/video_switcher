@@ -6,20 +6,36 @@ import main from "../styles/main.css"
 import $ from "jquery/src/jquery"
 let iframeLinks = [
     {
-        "url": "https://school.robotwala.app/static/apps/threed/index.html",
-        "title": "CAD"
+        "url": "https://school.robotwala.app/static/apps/ide/ide-master/python-3.8.html",
+        "title": "Python Editor"
     },
     {
-        "url": "https://school.robotwala.app/static/apps/threed/index.html",
-        "title": "CAD"
+        "url": "https://school.robotwala.app/static/apps/ide/ide-master/python-3.8.html",
+        "title": "Python Editor"
     },
     {
-        "url": "https://school.robotwala.app/static/apps/threed/index.html",
-        "title": "CAD"
+        "url": "https://school.robotwala.app/static/apps/ide/ide-master/python-3.8.html",
+        "title": "Python Editor"
     },
     {
-        "url": "https://school.robotwala.app/static/apps/threed/index.html",
-        "title": "CAD"
+        "url": "https://school.robotwala.app/static/apps/ide/ide-master/python-3.8.html",
+        "title": "Python Editor"
+    },
+    {
+        "url": "https://school.robotwala.app/static/apps/ide/ide-master/python-3.8.html",
+        "title": "Python Editor"
+    },
+    {
+        "url": "https://school.robotwala.app/static/apps/ide/ide-master/python-3.8.html",
+        "title": "Python Editor"
+    },
+    {
+        "url": "https://school.robotwala.app/static/apps/ide/ide-master/python-3.8.html",
+        "title": "Python Editor"
+    },
+    {
+        "url": "https://school.robotwala.app/static/apps/ide/ide-master/python-3.8.html",
+        "title": "Python Editor"
     }
 ]
 Activity.init(iframeLinks);
