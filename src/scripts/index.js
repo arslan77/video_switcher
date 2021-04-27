@@ -8,18 +8,6 @@ let iframeLinks = [
     {
         "url": "https://school.robotwala.app/static/apps/threed/index.html",
         "title": "CAD"
-    },
-    {
-        "url": "https://school.robotwala.app/static/apps/threed/index.html",
-        "title": "CAD"
-    },
-    {
-        "url": "https://school.robotwala.app/static/apps/threed/index.html",
-        "title": "CAD"
-    },
-    {
-        "url": "https://school.robotwala.app/static/apps/threed/index.html",
-        "title": "CAD"
     }
 ]
 Activity.init(iframeLinks);
