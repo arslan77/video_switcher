@@ -6,32 +6,8 @@ import main from "../styles/main.css"
 import $ from "jquery/src/jquery"
 let iframeLinks = [
     {
-        "url": "https://school.robotwala.app/static/apps/ide/ide-master/python-3.8.html?level=1",
-        "title": "Python Editor"
-    },
-    {
-        "url": "https://school.robotwala.app/static/apps/ide/ide-master/python-3.8.html?level=2",
-        "title": "Python Editor"
-    },
-    {
-        "url": "https://school.robotwala.app/static/apps/ide/ide-master/python-3.8.html?level=3",
-        "title": "Python Editor"
-    },
-    {
-        "url": "https://school.robotwala.app/static/apps/ide/ide-master/python-3.8.html?level=4",
-        "title": "Python Editor"
-    },
-    {
-        "url": "https://school.robotwala.app/static/apps/ide/ide-master/python-3.8.html?level=5",
-        "title": "Python Editor"
-    },
-    {
-        "url": "https://school.robotwala.app/static/apps/ide/ide-master/python-3.8.html?level=6",
-        "title": "Python Editor"
-    },
-    {
-        "url": "https://school.robotwala.app/static/apps/ide/ide-master/python-3.8.html?level=7",
-        "title": "Python Editor"
+        "url": "https://school.robotwala.app/static/apps/liveeditor/",
+        "title": "Activity"
     }
 ]
 Activity.init(iframeLinks);
