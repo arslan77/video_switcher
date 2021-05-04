@@ -18,7 +18,7 @@ import $ from "jquery/src/jquery"
 
 let iframeLinks = [
     {
-        "url": "https://scratch.robotwala.app/",
+        "url": "https://jupyter.robotwala.app/lab/tree/ChatBot.ipynb?token=743785c71edc3f6b063ab8e540bee55717eb2001c5f5fc45",
         "title": "Activity"
     }
 ]
