@@ -5,21 +5,21 @@ import main from "../styles/main.css"
 
 import $ from "jquery/src/jquery"
 
-const queryString = window.location.search;
-const urlParams = new URLSearchParams(queryString);
-var lang = urlParams.get('lang');
-var url;
-
- if(lang === 'nl'){
-    url = "https://school.robotwala.app/static/apps/robotics-simulator/nl/index.html";
-}else{
-    url = "https://school.robotwala.app/static/apps/robotics-simulator/index.html";
-}
+// const queryString = window.location.search;
+// const urlParams = new URLSearchParams(queryString);
+// var lang = urlParams.get('lang');
+// var url;
+//
+//  if(lang === 'nl'){
+//     url = "https://school.robotwala.app/static/apps/robotics-simulator/nl/index.html";
+// }else{
+//     url = "https://school.robotwala.app/static/apps/robotics-simulator/index.html";
+// }
 
 let iframeLinks = [
     {
-        "url": url,
-        "title": "RSimulator"
+        "url": "https://scratch.robotwala.app/",
+        "title": "Activity"
     }
 ]
 Activity.init(iframeLinks);
