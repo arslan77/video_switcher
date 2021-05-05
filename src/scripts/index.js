@@ -8,6 +8,18 @@ let iframeLinks = [
     {
         "url": "https://school.robotwala.app/static/apps/liveeditor/",
         "title": "Activity"
+    },
+    {
+        "url": "https://school.robotwala.app/static/apps/liveeditor/",
+        "title": "Activity"
+    },
+    {
+        "url": "https://school.robotwala.app/static/apps/liveeditor/",
+        "title": "Activity"
+    },
+    {
+        "url": "https://school.robotwala.app/static/apps/liveeditor/",
+        "title": "Activity"
     }
 ]
 Activity.init(iframeLinks);
