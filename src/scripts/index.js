@@ -20,6 +20,10 @@ let iframeLinks = [
     {
         "url": "https://scratch.robotwala.app/",
         "title": "Activity"
+    },
+    {
+        "url": "https://scratch.robotwala.app/",
+        "title": "Activity"
     }
 ]
 Activity.init(iframeLinks);
