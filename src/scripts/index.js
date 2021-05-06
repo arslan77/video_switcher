@@ -6,19 +6,19 @@ import main from "../styles/main.css"
 import $ from "jquery/src/jquery"
 let iframeLinks = [
     {
-        "url": "https://school.robotwala.app/static/apps/liveeditor/",
+        "url": "https://school.robotwala.app/static/apps/computer-vision/",
         "title": "Activity"
     },
     {
-        "url": "https://school.robotwala.app/static/apps/liveeditor/",
+        "url": "https://school.robotwala.app/static/apps/computer-vision/",
         "title": "Activity"
     },
     {
-        "url": "https://school.robotwala.app/static/apps/liveeditor/",
+        "url": "https://school.robotwala.app/static/apps/computer-vision/",
         "title": "Activity"
     },
     {
-        "url": "https://school.robotwala.app/static/apps/liveeditor/",
+        "url": "https://school.robotwala.app/static/apps/computer-vision/",
         "title": "Activity"
     }
 ]
