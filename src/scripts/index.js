@@ -6,15 +6,15 @@ import main from "../styles/main.css"
 import $ from "jquery/src/jquery"
 let iframeLinks = [
     {
-        "url": "https://school.robotwala.app/static/apps/liveeditor/index.html?level=1",
+        "url": "/static/theme/blockly/apps/blocklyduino/index.html",
         "title": "Activity"
     },
     {
-        "url": "https://school.robotwala.app/static/apps/liveeditor/index.html?level=2",
+        "url": "/static/theme/blockly/apps/blocklyduino/index.html",
         "title": "Activity"
     },
     {
-        "url": "https://school.robotwala.app/static/apps/liveeditor/index.html?level=3",
+        "url": "/static/theme/blockly/apps/blocklyduino/index.html",
         "title": "Activity"
     }
 ]
