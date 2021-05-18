@@ -32,6 +32,26 @@ let iframeLinks = [
     {
         "url": "https://school.robotwala.app/static/apps/ide/ide-master/python-3.8.html?level=7",
         "title": "Python Editor"
+    },
+    {
+        "url": "https://school.robotwala.app/static/apps/ide/ide-master/python-3.8.html?level=8",
+        "title": "Python Editor"
+    },
+    {
+        "url": "https://school.robotwala.app/static/apps/ide/ide-master/python-3.8.html?level=9",
+        "title": "Python Editor"
+    },
+    {
+        "url": "https://school.robotwala.app/static/apps/ide/ide-master/python-3.8.html?level=10",
+        "title": "Python Editor"
+    },
+    {
+        "url": "https://school.robotwala.app/static/apps/ide/ide-master/python-3.8.html?level=11",
+        "title": "Python Editor"
+    },
+    {
+        "url": "https://school.robotwala.app/static/apps/ide/ide-master/python-3.8.html?level=12",
+        "title": "Python Editor"
     }
 ]
 Activity.init(iframeLinks);
