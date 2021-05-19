@@ -4,6 +4,12 @@ import Activity from "../../js/lib-activity";
 import main from "../styles/main.css"
 
 import $ from "jquery/src/jquery"
+
+var url = new URL(window.location.href);
+var level = url.searchParams.get("level");
+var user = url.searchParams.get("user");
+
+
 let iframeLinks = [
     {
         "url": "https://school.robotwala.app/static/apps/ide/ide-master/python-3.8.html?level=1",
@@ -57,9 +63,9 @@ let iframeLinks = [
 Activity.init(iframeLinks);
 
 let iframe = $('#iframe')
-let loadIframe = (index) =>{
+let loadIframe = (index) => {
     iframe.attr('src', iframeLinks[index].url);
-    $("#title").text((index+1)+" - "+iframeLinks[index].title);
+    $("#title").text((index + 1) + " - " + iframeLinks[index].title);
 }
 
 let index = 0;
