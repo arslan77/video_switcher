@@ -6,15 +6,23 @@ import main from "../styles/main.css"
 import $ from "jquery/src/jquery"
 let iframeLinks = [
     {
-        "url": "https://school.robotwala.app/static/apps/liveeditor/index.html?level=1",
+        "url": "https://school.robotwala.app/static/apps/liveeditor/intorduction-to-html-canvas-5-levels.html?level=1",
         "title": "Activity"
     },
     {
-        "url": "https://school.robotwala.app/static/apps/liveeditor/index.html?level=2",
+        "url": "https://school.robotwala.app/static/apps/liveeditor/intorduction-to-html-canvas-5-levels.html?level=2",
         "title": "Activity"
     },
     {
-        "url": "https://school.robotwala.app/static/apps/liveeditor/index.html?level=3",
+        "url": "https://school.robotwala.app/static/apps/liveeditor/intorduction-to-html-canvas-5-levels.html?level=3",
+        "title": "Activity"
+    },
+    {
+        "url": "https://school.robotwala.app/static/apps/liveeditor/intorduction-to-html-canvas-5-levels.html?level=4",
+        "title": "Activity"
+    },
+    {
+        "url": "https://school.robotwala.app/static/apps/liveeditor/intorduction-to-html-canvas-5-levels.html?level=5",
         "title": "Activity"
     }
 ]
