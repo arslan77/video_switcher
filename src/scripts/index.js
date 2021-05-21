@@ -4,18 +4,33 @@ import Activity from "../../js/lib-activity";
 import main from "../styles/main.css"
 
 import $ from "jquery/src/jquery"
-let iframeLinks = [
-    {
-        "url": "https://school.robotwala.app/static/apps/threed/index.html",
-        "title": "CAD"
-    }
-]
+
+var url = new URL(window.location.href);
+let level = url.searchParams.get("level");
+let user = url.searchParams.get("user");
+let activity = url.searchParams.get("activity");
+
+level === null ? level = 1 : level;
+user === null ? user = "temp" : user;
+activity === null ? activity = "CAD" : activity;
+
+let iframeLinks = [];
+
+for (var i = 1; i <= level; i++) {
+    iframeLinks.push(
+        {
+            "url": "https://school.robotwala.app/static/apps/threed/index.html?level=" + i + "&user=" + user + "&activity=" + activity,
+            "title": "CAD"
+        }
+    )
+}
+
 Activity.init(iframeLinks);
 
 let iframe = $('#iframe')
-let loadIframe = (index) =>{
+let loadIframe = (index) => {
     iframe.attr('src', iframeLinks[index].url);
-    $("#title").text((index+1)+" - "+iframeLinks[index].title);
+    $("#title").text((index + 1) + " - " + iframeLinks[index].title);
 }
 
 let index = 0;
