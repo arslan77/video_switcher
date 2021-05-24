@@ -7,11 +7,13 @@ import $ from "jquery/src/jquery"
 
 
 var url = new URL(window.location.href);
+let maxLevel = url.searchParams.get("maxLevel");
 let level = url.searchParams.get("level");
 let user = url.searchParams.get("user");
 let activity = url.searchParams.get("activity");
 let file = url.searchParams.get("file");
 
+maxLevel === null ? maxLevel = 1 : maxLevel;
 level === null ? level = 1 : level;
 user === null ? user = "temp" : user;
 activity === null ? activity = "HTML" : activity;
@@ -19,7 +21,7 @@ file === null ? file = "index" : file;
 
 let iframeLinks = [];
 
-for (var i = 1; i <= level; i++) {
+for (var i = 1; i <= maxLevel; i++) {
     iframeLinks.push(
         {
             "url": "https://school.robotwala.app/static/apps/liveeditor/" + file + ".html?level=" + i + "&user=" + user + "&activity=" + activity,
