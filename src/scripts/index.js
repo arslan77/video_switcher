@@ -4,34 +4,36 @@ import Activity from "../../js/lib-activity";
 import main from "../styles/main.css"
 
 import $ from "jquery/src/jquery"
-let iframeLinks = [
-    {
-        "url": "https://school.robotwala.app/static/apps/liveeditor/intorduction-to-html-canvas-5-levels.html?level=1",
-        "title": "Activity"
-    },
-    {
-        "url": "https://school.robotwala.app/static/apps/liveeditor/intorduction-to-html-canvas-5-levels.html?level=2",
-        "title": "Activity"
-    },
-    {
-        "url": "https://school.robotwala.app/static/apps/liveeditor/intorduction-to-html-canvas-5-levels.html?level=3",
-        "title": "Activity"
-    },
-    {
-        "url": "https://school.robotwala.app/static/apps/liveeditor/intorduction-to-html-canvas-5-levels.html?level=4",
-        "title": "Activity"
-    },
-    {
-        "url": "https://school.robotwala.app/static/apps/liveeditor/intorduction-to-html-canvas-5-levels.html?level=5",
-        "title": "Activity"
-    }
-]
+
+
+var url = new URL(window.location.href);
+let level = url.searchParams.get("level");
+let user = url.searchParams.get("user");
+let activity = url.searchParams.get("activity");
+let file = url.searchParams.get("file");
+
+level === null ? level = 1 : level;
+user === null ? user = "temp" : user;
+activity === null ? activity = "HTML" : activity;
+file === null ? file = "index" : file;
+
+let iframeLinks = [];
+
+for (var i = 1; i <= level; i++) {
+    iframeLinks.push(
+        {
+            "url": "https://school.robotwala.app/static/apps/liveeditor/" + file + ".html?level=" + i + "&user=" + user + "&activity=" + activity,
+            "title": "CAD"
+        }
+    )
+}
+
 Activity.init(iframeLinks);
 
 let iframe = $('#iframe')
-let loadIframe = (index) =>{
+let loadIframe = (index) => {
     iframe.attr('src', iframeLinks[index].url);
-    $("#title").text((index+1)+" - "+iframeLinks[index].title);
+    $("#title").text((index + 1) + " - " + iframeLinks[index].title);
 }
 
 let index = 0;
