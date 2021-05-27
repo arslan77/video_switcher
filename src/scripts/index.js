@@ -5,10 +5,30 @@ import main from "../styles/main.css"
 
 import $ from "jquery/src/jquery"
 
-// const queryString = window.location.search;
-// const urlParams = new URLSearchParams(queryString);
-// var lang = urlParams.get('lang');
-// var url;
+var url = new URL(window.location.href);
+let level = url.searchParams.get("level");
+let maxLevel = url.searchParams.get("maxLevel");
+let user = url.searchParams.get("user");
+let activity = url.searchParams.get("activity");
+let id = url.searchParams.get("id");
+
+level === null ? level = 1 : level;
+maxLevel === null ? maxLevel = 1 : maxLevel;
+user === null ? user = "temp" : user;
+activity === null ? activity = "CAD" : activity;
+// id === null ? id = "0" : id;
+
+let iframeLinks = [];
+
+for (var i = 1; i <= maxLevel; i++) {
+    iframeLinks.push(
+        {
+            "url": "https://scratch.robotwala.app?level=" + i + "&user=" + user + "&activity=" + activity,
+            "title": "CAD"
+        }
+    )
+}
+
 //
 //  if(lang === 'nl'){
 //     url = "https://school.robotwala.app/static/apps/robotics-simulator/nl/index.html";
@@ -16,28 +36,7 @@ import $ from "jquery/src/jquery"
 //     url = "https://school.robotwala.app/static/apps/robotics-simulator/index.html";
 // }
 
-let iframeLinks = [
-    {
-        "url": "https://scratch.robotwala.app/",
-        "title": "Activity"
-    },
-    {
-        "url": "https://scratch.robotwala.app/",
-        "title": "Activity"
-    },
-    {
-        "url": "https://scratch.robotwala.app/",
-        "title": "Activity"
-    },
-    {
-        "url": "https://scratch.robotwala.app/",
-        "title": "Activity"
-    },
-    {
-        "url": "https://scratch.robotwala.app/",
-        "title": "Activity"
-    }
-]
+
 Activity.init(iframeLinks);
 
 let iframe = $('#iframe')
