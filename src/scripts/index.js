@@ -11,19 +11,21 @@ let level = url.searchParams.get("level");
 let maxLevel = url.searchParams.get("maxLevel");
 let user = url.searchParams.get("user");
 let activity = url.searchParams.get("activity");
+let file = url.searchParams.get("file");
 
 level === null ? level = 1 : level;
 maxLevel === null ? maxLevel = 1 : maxLevel;
 user === null ? user = "temp" : user;
 activity === null ? activity = "CAD" : activity;
+file === null ? file = "index" : file;
 
 let iframeLinks = [];
 
 for (var i = 1; i <= maxLevel; i++) {
     iframeLinks.push(
         {
-            "url": "https://scratch.robotwala.app?level=" + i + "&user=" + user + "&activity=" + activity,
-            "title": "CAD"
+            "url": "https://school.robotwala.app/static/apps/skulpt/" + file + ".html?level=" + i + "&user=" + user + "&activity=" + activity,
+            "title": "Skulpt"
         }
     )
 }
