@@ -7,16 +7,18 @@ import $ from "jquery/src/jquery"
 
 var url = new URL(window.location.href);
 let level = url.searchParams.get("level");
+let maxLevel = url.searchParams.get("maxLevel");
 let user = url.searchParams.get("user");
 let activity = url.searchParams.get("activity");
 
 level === null ? level = 1 : level;
+maxLevel === null ? maxLevel = 1 : maxLevel;
 user === null ? user = "temp" : user;
 activity === null ? activity = "CAD" : activity;
 
 let iframeLinks = [];
 
-for (var i = 1; i <= level; i++) {
+for (var i = 1; i <= maxLevel; i++) {
     iframeLinks.push(
         {
             "url": "https://school.robotwala.app/static/apps/threed/index.html?level=" + i + "&user=" + user + "&activity=" + activity,
