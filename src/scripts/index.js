@@ -6,60 +6,29 @@ import main from "../styles/main.css"
 import $ from "jquery/src/jquery"
 
 var url = new URL(window.location.href);
-var level = url.searchParams.get("level");
-var user = url.searchParams.get("user");
+let level = url.searchParams.get("level");
+let maxLevel = url.searchParams.get("maxLevel");
+let user = url.searchParams.get("user");
+let activity = url.searchParams.get("activity");
+let file = url.searchParams.get("file");
 
+level === null ? level = 1 : level;
+maxLevel === null ? maxLevel = 1 : maxLevel;
+user === null ? user = "temp" : user;
+activity === null ? activity = "CAD" : activity;
+file === null ? file = "python-3.8" : file;
 
-let iframeLinks = [
-    {
-        "url": "https://school.robotwala.app/static/apps/ide/ide-master/python-3.8.html?level=1",
-        "title": "Python Editor"
-    },
-    {
-        "url": "https://school.robotwala.app/static/apps/ide/ide-master/python-3.8.html?level=2",
-        "title": "Python Editor"
-    },
-    {
-        "url": "https://school.robotwala.app/static/apps/ide/ide-master/python-3.8.html?level=3",
-        "title": "Python Editor"
-    },
-    {
-        "url": "https://school.robotwala.app/static/apps/ide/ide-master/python-3.8.html?level=4",
-        "title": "Python Editor"
-    },
-    {
-        "url": "https://school.robotwala.app/static/apps/ide/ide-master/python-3.8.html?level=5",
-        "title": "Python Editor"
-    },
-    {
-        "url": "https://school.robotwala.app/static/apps/ide/ide-master/python-3.8.html?level=6",
-        "title": "Python Editor"
-    },
-    {
-        "url": "https://school.robotwala.app/static/apps/ide/ide-master/python-3.8.html?level=7",
-        "title": "Python Editor"
-    },
-    {
-        "url": "https://school.robotwala.app/static/apps/ide/ide-master/python-3.8.html?level=8",
-        "title": "Python Editor"
-    },
-    {
-        "url": "https://school.robotwala.app/static/apps/ide/ide-master/python-3.8.html?level=9",
-        "title": "Python Editor"
-    },
-    {
-        "url": "https://school.robotwala.app/static/apps/ide/ide-master/python-3.8.html?level=10",
-        "title": "Python Editor"
-    },
-    {
-        "url": "https://school.robotwala.app/static/apps/ide/ide-master/python-3.8.html?level=11",
-        "title": "Python Editor"
-    },
-    {
-        "url": "https://school.robotwala.app/static/apps/ide/ide-master/python-3.8.html?level=12",
-        "title": "Python Editor"
-    }
-]
+let iframeLinks = [];
+
+for (var i = 1; i <= maxLevel; i++) {
+    iframeLinks.push(
+        {
+            "url": "https://school.robotwala.app/static/apps/ide/ide-master/" + file + ".html?level=" + i + "&user=" + user + "&activity=" + activity,
+            "title": "Python"
+        }
+    )
+}
+
 Activity.init(iframeLinks);
 
 let iframe = $('#iframe')
