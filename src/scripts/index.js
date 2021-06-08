@@ -15,7 +15,7 @@ let id = url.searchParams.get("id");
 level === null ? level = 1 : level;
 maxLevel === null ? maxLevel = 1 : maxLevel;
 user === null ? user = "temp" : user;
-activity === null ? activity = "CAD" : activity;
+activity === null ? activity = "Scratch" : activity;
 // id === null ? id = "0" : id;
 
 let iframeLinks = [];
@@ -24,7 +24,7 @@ for (var i = 1; i <= maxLevel; i++) {
     iframeLinks.push(
         {
             "url": "https://scratch.robotwala.app?level=" + i + "&user=" + user + "&activity=" + activity,
-            "title": "CAD"
+            "title": "Scratch"
         }
     )
 }
