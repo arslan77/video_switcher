@@ -23,8 +23,8 @@ let iframeLinks = [];
 for (var i = 1; i <= maxLevel; i++) {
     iframeLinks.push(
         {
-            "url": "https://scratch.robotwala.app?level=" + i + "&user=" + user + "&activity=" + activity,
-            "title": "Scratch"
+            "url": "https://solarsystemscope.com/iframe?level=" + i + "&user=" + user + "&activity=" + activity,
+            "title": "Solar"
         }
     )
 }
