@@ -9,7 +9,7 @@ var url = new URL(window.location.href);
 let level = url.searchParams.get("level");
 let maxLevel = url.searchParams.get("maxLevel");
 let user = url.searchParams.get("user");
-let activity = url.searchParams.get("activity");
+let activity = url.searchParams.get("activityId");
 
 level === null ? level = 1 : level;
 maxLevel === null ? maxLevel = 1 : maxLevel;
@@ -21,7 +21,7 @@ let iframeLinks = [];
 for (var i = 1; i <= maxLevel; i++) {
     iframeLinks.push(
         {
-            "url": "https://school.robotwala.app/static/apps/threed/index.html?level=" + i + "&user=" + user + "&activity=" + activity,
+            "url": "https://school.robotwala.app/static/apps/threed/index.html?level=" + i + "&user=" + user + "&activityId=" + activity,
             "title": "CAD"
         }
     )
