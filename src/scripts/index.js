@@ -17,7 +17,7 @@ maxLevel === null ? maxLevel = 1 : maxLevel;
 user === null ? user = "temp" : user;
 activity === null ? activity = "Scratch" : activity;
 // id === null ? id = "0" : id;
-
+activity === null ? activity = "ES" : activity;
 let iframeLinks = [];
 
 for (var i = 1; i <= maxLevel; i++) {
