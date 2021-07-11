@@ -14,15 +14,15 @@ let activity = url.searchParams.get("activityId");
 level === null ? level = 1 : level;
 maxLevel === null ? maxLevel = 1 : maxLevel;
 user === null ? user = "temp" : user;
-activity === null ? activity = "CAD" : activity;
+activity === null ? activity = "ES" : activity;
 
 let iframeLinks = [];
 
 for (var i = 1; i <= maxLevel; i++) {
     iframeLinks.push(
         {
-            "url": "https://school.robotwala.app/static/apps/threed/index.html?level=" + i + "&user=" + user + "&activityId=" + activity,
-            "title": "CAD"
+            "url": "https://testgame2.robotwala.app?level=" + i + "&user=" + user + "&activityId=" + activity,
+            "title": "ES"
         }
     )
 }
