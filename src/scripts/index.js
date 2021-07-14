@@ -4,20 +4,32 @@ import Activity from "../../js/lib-activity";
 import main from "../styles/main.css"
 
 import $ from "jquery/src/jquery"
-let iframeLinks = [
-    {
-        "url": "/static/theme/blockly/apps/blocklyduino/index.html",
-        "title": "Activity"
-    },
-    {
-        "url": "/static/theme/blockly/apps/blocklyduino/index.html",
-        "title": "Activity"
-    },
-    {
-        "url": "/static/theme/blockly/apps/blocklyduino/index.html",
-        "title": "Activity"
-    }
-]
+
+
+var url = new URL(window.location.href);
+let level = url.searchParams.get("level");
+let maxLevel = url.searchParams.get("maxLevel");
+let user = url.searchParams.get("user");
+let activity = url.searchParams.get("activity");
+let id = url.searchParams.get("id");
+
+level === null ? level = 1 : level;
+maxLevel === null ? maxLevel = 1 : maxLevel;
+user === null ? user = "temp" : user;
+activity === null ? activity = "Activity" : activity;
+// id === null ? id = "0" : id;
+activity === null ? activity = "Activity" : activity;
+let iframeLinks = [];
+
+for (var i = 1; i <= maxLevel; i++) {
+    iframeLinks.push(
+        {
+            "url": "https://school.robotwala.app/static/theme/arduino/apps/blocklyduino/index.html?level=" + i + "&user=" + user + "&activity=" + activity,
+            "title": "Activity"
+        }
+    )
+}
+
 Activity.init(iframeLinks);
 
 let iframe = $('#iframe')

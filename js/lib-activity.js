@@ -12,7 +12,7 @@ Activity.init = (lectures)=>{
 }
 
 Activity.loadIframe = (index)=>{
-  Activity.iframe.attr("src", Activity.iframeLinks[index].url);
+  //Activity.iframe.attr("src", Activity.iframeLinks[index].url);
   $("#title").text((index + 1) + " - " + Activity.iframeLinks[index].title);
   Activity.setWorkspace(Activity.LEVEL, Activity.iframeLinks.length, false)
 }
